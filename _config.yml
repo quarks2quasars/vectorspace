@@ -1,0 +1,9 @@
+title: VectorSpace
+description: High School Physics and Science Learning
+theme: minima # Or your chosen theme
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
