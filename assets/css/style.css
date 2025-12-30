@@ -1,0 +1,111 @@
+/* --- Global Styles --- */
+:root {
+  --primary-blue: #2a52be;
+  --success-green: #2d8a57;
+  --warning-orange: #e67e22;
+  --bg-light: #f8f9fa;
+  --text-main: #333;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Content Blocks --- */
+
+/* The Theory/Definition Box */
+.theory-box {
+  background-color: #eef2ff;
+  border-left: 5px solid var(--primary-blue);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: var(--border-radius);
+}
+
+.theory-box h4 {
+  margin-top: 0;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* The Worked Example Box */
+.example-box {
+  background-color: #f0fff4;
+  border: 1px solid #c6f6d5;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: var(--border-radius);
+}
+
+.example-box::before {
+  content: "📝 WORKED EXAMPLE";
+  display: block;
+  font-weight: bold;
+  color: var(--success-green);
+  margin-bottom: 0.5rem;
+}
+
+/* --- Derivation Accordion --- */
+details {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+/* --- Simulation Call-to-Action --- */
+.sim-link {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  margin: 1rem 0;
+}
+
+.sim-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sim-link i {
+  margin-right: 8px;
+}
+
+/* --- Math & Graphs --- */
+.math-display {
+  overflow-x: auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.graph-container {
+  background: white;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  margin: 2rem 0;
+}
