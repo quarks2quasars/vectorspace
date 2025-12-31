@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Science Academy</title>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
+</head>
+<body>
+
+    <nav style="background: #2a52be; padding: 1rem; margin-bottom: 2rem;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <a href="{{ '/' | relative_url }}" style="color: white; font-weight: bold; text-decoration: none; margin-right: 20px;">🏠 Home</a>
+            <a href="{{ '/physics/shm/' | relative_url }}" style="color: white; text-decoration: none;">Physics</a>
+        </div>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #eee; text-align: center; color: #666;">
+        <p>&copy; 2024 Science Academy - Learning Physics Made Simple</p>
+    </footer>
+
+</body>
+</html>
