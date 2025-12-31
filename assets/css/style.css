@@ -109,3 +109,20 @@ summary:hover {
   text-align: center;
   margin: 2rem 0;
 }
+/* Next/Previous Navigation */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.next-btn {
+  background-color: var(--primary-blue);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
